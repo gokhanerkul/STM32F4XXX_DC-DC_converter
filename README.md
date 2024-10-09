@@ -47,6 +47,10 @@ You can simply update the values of Kp, Ki, and Kd directly in the code where th
 Increase or decrease this values for proportional, integral, derrivative gains.
 These values may vary from system to system.
 
+## Author: Gökhan Erkul
+
+**Have a good work!**
+
 
 
    [dill]: <https://github.com/joemccann/dillinger>
