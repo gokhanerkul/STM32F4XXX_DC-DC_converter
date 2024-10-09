@@ -1,4 +1,4 @@
-<h1 align="center">STM32F401RE Full Birdge DC-DC Converter Project</h1>
+<h1 align="center">STM32F401RE Full Bridge DC-DC Converter Project</h1>
 
 # _Information_
 
