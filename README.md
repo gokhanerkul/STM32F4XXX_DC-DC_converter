@@ -14,7 +14,7 @@ This approach showcases the STM32's capability in advanced control tasks, with t
 
 - **PID Control Algorithm:** Implements a Proportional-Integral-Derivative (PID) algorithm for precise output voltage regulation by dynamically adjusting the PWM duty cycle.
 - **Setpoint Defined in Code:** The setpoint and control parameters (Kp, Ki, Kd) are predefined in the code, eliminating the need for external potentiometers, offering more stability and ease of tuning.
-- **12V Input with Adjustable Output Voltage:** The converter regulates an output voltage ranging from 11.56V to 50V from a 12V input supply.
+- **12V Input with Adjustable Output Voltage:** The converter regulates an output voltage ranging from 5.6V to 50V from a 12V input supply.
 - **Analog Feedback Monitoring:** Uses an Analog-to-Digital Converter (ADC) to continuously monitor the scaled-down feedback voltage, ensuring accurate control.
 - **PWM Control:** A high-frequency Pulse Width Modulation (PWM) signal is generated to drive the DC-DC converter, with a duty cycle range of 0 to 479 (minimum to maximum).
 - **Voltage Divider Circuit:** A voltage divider with 47kΩ and 3.3kΩ resistors scales the output voltage to a range suitable for ADC input (0.756V to 3.3V).
