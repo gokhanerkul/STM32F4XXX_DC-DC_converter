@@ -3,7 +3,7 @@
 # _Information_
 
 
-In this project, an STM32 microcontroller is utilized to control a DC-DC converter, aiming to regulate the output voltage by implementing a Proportional-Integral-Derivative (PID) control algorithm. The input voltage is 12V, and the output voltage is adjustable between 5.6V and 50V. The output voltage is scaled down using a voltage divider (0.362V to 3.23V) to be suitable for the STM32's Analog-to-Digital Converter (ADC).
+In this project, an STM32 microcontroller is utilized to control a DC-DC converter, aiming to regulate the output voltage by implementing a Proportional-Integral-Derivative (PID) control algorithm. The input voltage is 24V, and the output voltage is adjustable between 5.6V and 50V. The output voltage is scaled down using a voltage divider (0.362V to 3.23V) to be suitable for the STM32's Analog-to-Digital Converter (ADC).
 
 The feedback voltage from the converter's output is continuously monitored by the ADC and compared to a defined setpoint in the code. The PID algorithm then adjusts the Pulse Width Modulation (PWM) duty cycle to maintain the desired output voltage. Instead of using potentiometers to adjust the setpoint and control parameters, these values are now predefined in the code, allowing for precise and stable control of the system. The STM32's Direct Memory Access (DMA) feature is used for fast and efficient ADC readings, which minimizes CPU overhead and enhances real-time performance in regulating the converter.
 
@@ -14,7 +14,7 @@ This approach showcases the STM32's capability in advanced control tasks, with t
 
 - **PID Control Algorithm:** Implements a Proportional-Integral-Derivative (PID) algorithm for precise output voltage regulation by dynamically adjusting the PWM duty cycle.
 - **Setpoint Defined in Code:** The setpoint and control parameters (Kp, Ki, Kd) are predefined in the code, eliminating the need for external potentiometers, offering more stability and ease of tuning.
-- **12V Input with Adjustable Output Voltage:** The converter regulates an output voltage ranging from 5.6V to 50V from a 12V input supply.
+- **24V Input with Adjustable Output Voltage:** The converter regulates an output voltage ranging from 5.6V to 50V from a 24V input supply.
 - **Analog Feedback Monitoring:** Uses an Analog-to-Digital Converter (ADC) to continuously monitor the scaled-down feedback voltage, ensuring accurate control.
 - **PWM Control:** A high-frequency Pulse Width Modulation (PWM) signal is generated to drive the DC-DC converter, with a duty cycle range of 0 to 839 (minimum to maximum).
 - **Voltage Divider Circuit:** A voltage divider with 47kΩ and 680kΩ resistors scales the output voltage to a range suitable for ADC input (0.362V to 3.23V).
