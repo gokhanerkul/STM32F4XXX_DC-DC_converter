@@ -16,8 +16,8 @@ This approach showcases the STM32's capability in advanced control tasks, with t
 - **Setpoint Defined in Code:** The setpoint and control parameters (Kp, Ki, Kd) are predefined in the code, eliminating the need for external potentiometers, offering more stability and ease of tuning.
 - **12V Input with Adjustable Output Voltage:** The converter regulates an output voltage ranging from 5.6V to 50V from a 12V input supply.
 - **Analog Feedback Monitoring:** Uses an Analog-to-Digital Converter (ADC) to continuously monitor the scaled-down feedback voltage, ensuring accurate control.
-- **PWM Control:** A high-frequency Pulse Width Modulation (PWM) signal is generated to drive the DC-DC converter, with a duty cycle range of 0 to 479 (minimum to maximum).
-- **Voltage Divider Circuit:** A voltage divider with 47kΩ and 3.3kΩ resistors scales the output voltage to a range suitable for ADC input (0.756V to 3.3V).
+- **PWM Control:** A high-frequency Pulse Width Modulation (PWM) signal is generated to drive the DC-DC converter, with a duty cycle range of 0 to 1023 (minimum to maximum).
+- **Voltage Divider Circuit:** A voltage divider with 47kΩ and 680kΩ resistors scales the output voltage to a range suitable for ADC input (0.756V to 3.3V).
 - **Direct Memory Access (DMA) for ADC:** The project uses DMA for continuous ADC readings, reducing CPU load and enabling real-time feedback and control.
 - **High-Frequency Operation:** The system operates at a 100kHz PWM signal frequency, which is crucial for efficient power conversion.
 - **Scalable and Flexible Design:** The design is flexible for future modifications, including changing setpoint values or adjusting PID parameters directly in the code.
